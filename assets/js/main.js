@@ -26,10 +26,23 @@ Let es de scope local, esto quiere decir que solo existe dentro del bloque de c�
 
 */
 
-
+/* 
 function mostrarNumero () {
     let numero = 5
     console.log(numero)
 }
 
-console.log(numero)
+console.log(numero) // Esto no se puede hacer */
+
+
+// Hoisting
+
+/* Se refiere al proceso de "Elevación" de variables y funciones antes de ejecutar el código */
+
+let nombre = 'Godofredo'
+
+let saludo = (nombre) => {
+    return 'Hola, les saluda ' + nombre
+}
+
+console.log(saludo(nombre))
