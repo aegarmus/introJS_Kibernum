@@ -55,7 +55,7 @@ console.log(saludo(nombre))
 -> Primitivos -> Son los tipos de datos que tienen su propio prototipo de referencias -> Alberga valores con un único valor asociado
 
 
--> Referenciales
+-> Referenciales -> Son tipos de datos que su prototipo posee una referencia con multiples valores asociados
 */
 
 //Primitivos
@@ -105,3 +105,54 @@ console.log(letra2)
 console.log(letra3)
 
 console.log(letra1 == letra3)
+
+/* Referenciales */
+
+
+// Objetos
+
+// Busca hacer una representación de algo de la vida real en código
+//  Para ello crea una estructura de clave-valor
+
+let desarrollador1 = {
+    nombre: 'Juanito', // El conjunto de la clave con el valor se llama atributo
+    apellido: 'Adasme',
+    edad: 32,
+    ocupacion: 'Desarrollador Senior',
+    empleo: {
+        sector: 'banca',
+        empresa: 'Scotiabank',
+        cargo: 'Backend Developer',
+        salario: 3000000
+    },
+    //Métodos -> son Funciones que estan dentro de los objetos!
+    nombreCompleto: function() {
+        return this.nombre + ' ' + this.apellido
+    }
+}
+
+// Acceso a los datos
+
+//notación por punto
+desarrollador1.departamento = 'Desarrollo Backend'
+
+console.log(desarrollador1.departamento)
+
+desarrollador1.edad = 29
+
+console.log(desarrollador1)
+
+console.log(desarrollador1.empleo.empresa)
+
+//notacion por corchete
+
+console.log(desarrollador1['nombre'])
+
+console.log(desarrollador1.nombreCompleto())
+
+
+//Arrays -> Arreglos
+
+
+
+// Funciones
