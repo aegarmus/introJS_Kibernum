@@ -2,9 +2,9 @@ console.log('Estamos conectados a Javascript!!')
 
 // Variables
 
-const numero1 = 3.1412 // -> Almacena en memoria valores "constantes" -> que no puede cambiar su valor de referencia ✅
+const numero1 = 3.1412 // -> Almacena en memoria valores "constantes" -> que no puede cambiar su valor de referencia -> scope local ✅
 
-let numero2 = 27 // -> almacena en memoria valores que pueden ser modificados o reasignando su valor de referencia ✅
+let numero2 = 27 // -> almacena en memoria valores que pueden ser modificados o reasignando su valor de referencia -> scope local ✅
 
 var numero3 = 15 // -> Almacena en memoria valores que puden ser modificados o reasignada su referencia pero actua de forma global ❌
 
@@ -115,7 +115,7 @@ console.log(letra1 == letra3)
 //  Para ello crea una estructura de clave-valor
 
 let desarrollador1 = {
-    nombre: 'Juanito', // El conjunto de la clave con el valor se llama atributo
+    nombre: 'Juanito', // El conjunto de la clave con el valor se llama atributo o propiedad
     apellido: 'Adasme',
     edad: 32,
     ocupacion: 'Desarrollador Senior',
@@ -143,12 +143,12 @@ desarrollador1.edad = 29
 console.log(desarrollador1)
 
 console.log(desarrollador1.empleo.empresa)
+console.log(desarrollador1.nombreCompleto())
 
 //notacion por corchete
 
 console.log(desarrollador1['nombre'])
 
-console.log(desarrollador1.nombreCompleto())
 
 
 //Arrays -> Arreglos
